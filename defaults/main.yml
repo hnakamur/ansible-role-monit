@@ -1,0 +1,3 @@
+---
+# defaults file for monit
+monit_daemon_timeout_seconds: 60

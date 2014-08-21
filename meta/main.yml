@@ -1,0 +1,14 @@
+---
+galaxy_info:
+  author: Hiroaki Nakamura
+  description: An Ansible role to install monit
+  license: MIT
+  min_ansible_version: 1.2
+  platforms:
+  - name: EL
+    versions:
+    - 6
+  categories:
+  - monitoring
+dependencies:
+  - hnakamur.epel

@@ -240,6 +240,6 @@
 #
 
 # set daemon mode timeout to 1 minute
-set daemon 60
+set daemon {{ monit_daemon_timeout_seconds }}
 # Include all files from /etc/monit.d/
 include /etc/monit.d/*

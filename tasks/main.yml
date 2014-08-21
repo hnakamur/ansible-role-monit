@@ -1,0 +1,7 @@
+---
+# tasks file for monit
+- yum: name=monit state=latest
+- template: src=monit.conf.j2 dest=/etc/monit.conf owner=root group=root mode=0600
+  notify:
+    - reload monit
+- service: name=monit state=started enabled=yes
